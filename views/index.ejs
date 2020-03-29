@@ -31,34 +31,22 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm" style="border-color:green">
-                <h5 class="card-header" style="background-color:green"></h5>
-                <div class="card-body">
-                  <h5 class="card-title">Job Name</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-map-marker"></i> <i>Stockholm</i> <small class="text-muted float-right">200 SEK</small></h6>
-                  <p class="card-text">Bring my kid out of school, etc.</p>
-                  <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Do it!</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <% for(var i=0; i < jobs.length; i++) { %>
+              <%- include('job-modal', {i: i, jobs: jobs}) %>
+            <% } %>
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
+                  <p class="card-text d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary add" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="fas fa-plus-circle fa-10x"></i>
+                    </button>
+                  </p>
                   </div>
-                </div>
               </div>
             </div>
+            <%- include('new-job-modal') %>
+
           </div>
         </div>
       </div>

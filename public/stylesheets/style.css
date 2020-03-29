@@ -60,3 +60,6 @@ footer p {
   pointer-events: none;
   color: var(--main-text-color);
 }
+.add{
+  background-color: var(--main-bg-color);
+}
