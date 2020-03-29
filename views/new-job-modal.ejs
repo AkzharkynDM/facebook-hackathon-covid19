@@ -9,28 +9,32 @@
         </button>
       </div>
       <div class="modal-body">
+
         <!-- Default form login -->
-    <form class="text-center border border-light p-5 md-form" action="#!">
+    <form class="text-center border border-light p-5" action="#!">
 
     <p class="h4 mb-4">New job</p>
 
     <!-- Title -->
-    <input type="text" id="addJobFormTitle" class="form-control mb-4" placeholder="Title">
+    <input type="text" id="addJobFormTitle" name="addJobFormTitle" class="form-control mb-4" placeholder="Title" required>
 
     <!-- Description -->
-    <input type="text" id="addJobFormDesc" class="form-control mb-4" placeholder="Description">
+    <!--<input type="text" id="addJobFormDesc" class="form-control mb-4" placeholder="Description">-->
+    <textarea type="text" id="addJobFormDesc" name="addJobFormDesc" rows="2" class="form-control mb-4 md-textarea" placeholder="Description"></textarea>
 
     <!-- Tag category -->
-    <input type="text" id="addJobFormTag" class="form-control mb-4" placeholder="Category">
+    <input type="text" id="addJobFormTag" name="addJobFormTag" class="form-control mb-4" placeholder="Category" required>
+    <input class="typeahead" type="text" placeholder="Category">
 
     <!-- Valid until -->
     <!--<input type="text" id="addJobFormValidUntil" class="form-control datepicker mb-4" placeholder="Valid until">-->
     <div class="form-group"> <!-- Date input -->
            <label class="control-label" for="date">Valid until</label>
-           <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+           <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" required/>
     </div>
+  
     <!-- Location -->
-    <input type="text" id="addJobFormLocation" class="form-control mb-4" placeholder="Location">
+    <input type="text" id="addJobFormLocation" name="addJobFormLocation" class="form-control mb-4" placeholder="Location">
     <!--Google map-->
         <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 200px">
           <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
