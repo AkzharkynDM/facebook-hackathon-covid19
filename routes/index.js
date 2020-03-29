@@ -12,7 +12,8 @@ router.get('/', function(req, res, next) {
     'tag': '#d8fca8',
     'creation': Date.now(),
     'expiry': Date.now(),
-    'duration':  1
+    'duration':  1,
+    'token': "balh",
   }];
 
   console.log(jobs);
