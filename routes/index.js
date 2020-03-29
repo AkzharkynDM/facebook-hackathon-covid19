@@ -20,4 +20,9 @@ router.get('/', function(req, res, next) {
   res.render('index', {jobs: jobs});
 });
 
+router.post('/searching', function(req, res) {
+    var item = req.body.searchAnything;
+    console.log("User is looking for " + item);
+});
+
 module.exports = router;
