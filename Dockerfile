@@ -14,7 +14,7 @@ ENV SKIP_DB_WAIT=0 \
     SKIP_BOWER_INSTALL=1
 
 COPY . /app
-RUN sudo chown -R bitnami: /app
+RUN chown -R bitnami: /app
 
 RUN npm install
 
