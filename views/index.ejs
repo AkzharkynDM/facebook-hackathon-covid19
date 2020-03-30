@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<%- include('head') %>
+
+<body>
+<%- include('header') %>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Helpy</h1>
+          <p class="lead text-muted">Make the difference by helping others and getting paid for small job tasks. Don't be afriad to ask for help from others</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Get started</a>
+            <a href="https://covid-global-hackathon.devpost.com" target="_blank" class="btn btn-secondary my-2">Learn more</a>
+          </p>
+        </div>
+      </section>
+
+
+      <div class="album py-5 bg-light">
+        <form action="/searching" method="POST">
+        <div class="container">
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input class="form-control" type="text" name = "searchAnything" placeholder="Search by location, job category"/>
+          </div>
+        </div>
+      </form>
+
+        <div class="container">
+          <div class="row">
+            <% for(var i=0; i < jobs.length; i++) { %>
+              <%- include('job-modal', {i: i, jobs: jobs}) %>
+            <% } %>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                  <p class="card-text d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary add" data-toggle="modal" data-target="#exampleModalCenter">
+                      <i class="fas fa-plus-circle fa-10x"></i>
+                    </button>
+                  </p>
+                  </div>
+              </div>
+            </div>
+            <%- include('new-job-modal') %>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+<%- include('footer') %>
+</html>

@@ -1,0 +1,54 @@
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add a new job</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Default form login -->
+    <form class="text-center border border-light p-5" action="/api/jobs" method="POST">
+
+    <p class="h4 mb-4">New job</p>
+
+    <!-- Title -->
+    <input type="text" id="addJobFormTitle" name="addJobFormTitle" class="form-control mb-4" placeholder="Title" required>
+
+    <!-- Description -->
+    <!--<input type="text" id="addJobFormDesc" class="form-control mb-4" placeholder="Description">-->
+    <textarea type="text" id="addJobFormDesc" name="addJobFormDesc" rows="2" class="form-control mb-4 md-textarea" placeholder="Description"></textarea>
+
+    <!-- Tag category -->
+    <input type="text" id="addJobFormTag" name="addJobFormTag" class="form-control mb-4" placeholder="Category" required>
+    <input class="typeahead" type="text" placeholder="Category">
+
+    <!-- Valid until -->
+    <!--<input type="text" id="addJobFormValidUntil" class="form-control datepicker mb-4" placeholder="Valid until">-->
+    <div class="form-group"> <!-- Date input -->
+           <label class="control-label" for="date">Valid until</label>
+           <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="date" required/>
+    </div>
+  
+    <!-- Location -->
+    <input type="text" id="addJobFormLocation" name="addJobFormLocation" class="form-control mb-4" placeholder="Location">
+    <!--Google map-->
+        <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 200px">
+          <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    <!-- Payment button button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Pay</button>
+
+</form>
+<!-- Default form login -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
