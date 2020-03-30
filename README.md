@@ -7,6 +7,8 @@ Currently more and more people decide to stay home to avoid spearding of infecti
 # How to use Helpy?
 The interface is easy to use and native. People can search by lcoation, type of job, and then the results will appear. Then the person picks this job, gets the unique token associated with this job and gets paid. However, the person can also donate the money to chairy or perform the task volunteerly.
 
+[Here you can use the app](https://facebook-hackathon-covid19.herokuapp.com)
+
 # How to contribute to the project?
 Please share this idea, support our project or send an email to collaborate:)
 
