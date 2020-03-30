@@ -4,6 +4,7 @@ Helpy is a website, where people can help each other during this time. A person 
 # What inspired us to make this project?
 Currently more and more people decide to stay home to avoid spearding of infection and stay in safety. However, what happens to old people can live alone? Can we help them by volunteerly performing some tasks, e.g. bring medicine? And what can young and energetic people do to help others and earn some money? Just like the vulnerable population that needs some financial support? Maybe you can post some jobs that you need to complete but may outsource to them? You will have your job done and people will have some money:)  
 
+[Check out the video](https://vimeo.com/402104354)
 # How to use Helpy?
 The interface is easy to use and native. People can search by lcoation, type of job, and then the results will appear. Then the person picks this job, gets the unique token associated with this job and gets paid. However, the person can also donate the money to chairy or perform the task volunteerly.
 
